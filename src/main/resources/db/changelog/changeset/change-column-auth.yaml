@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: change-column-auth
+      author: Friday
+      changes:
+        - renameColumn:
+            tableName: auth_user
+            newColumnName: full_name
+            oldColumnName: first_name
